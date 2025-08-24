@@ -1,0 +1,37 @@
+#!/bin/bash
+# Simple script: asks where to save the new script file
+
+# Ask for file name
+read -r -p "Enter script name: " script
+
+# Ask where to save it
+read -r -p "Enter full path where to save (e.g. /home/user/scripts): " path
+
+# Ask for details
+read -r -p "Your full name: " fname
+read -r -p "Script description: " description
+
+# Create folder if it doesn't exist
+mkdir -p "$path"
+
+# Full file path
+file="${path}/${script}"
+
+# Write header to the file
+{
+  echo "#!/bin/bash"
+  echo "###########################################"
+  echo "# Author:      $fname"
+  echo "# Date:        $(date)"
+  echo "# Description: $description"
+  echo "# Modified:    $(date)"
+  echo "###########################################"
+  echo
+} > "$file"
+
+# Make script executable
+chmod +x "$file"
+
+# Open in vi
+vi "$file"
+
