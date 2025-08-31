@@ -1,12 +1,20 @@
-# Project 01 – add-local-user
+# Project 01 – Add Local User
 
-Creates a local Linux user with a comment and password handling.
+This project contains a Bash script to create a new local user on a Linux system with a username, comment (full name or description), and password.  
+The script ensures proper error handling and requires `sudo` privileges.
 
-## Run
-1. `vagrant up && vagrant ssh`
-2. `cd /vagrant`
-3. `./add-local-user.sh USERNAME "Full Name or Comment"`
+## Features
+- Creates a local user with a username and full name/comment
+- Sets a password for the new user
+- Forces the user to change the password at first login
+- Displays username, password, and host after successful creation
+- Exits with error messages if any step fails
 
-## Notes
-- Requires sudo privileges inside the VM.
-- Script prints username/host on success; exits non-zero on failure.
+## Requirements
+- Linux system with `bash` shell
+- `sudo` privileges to run the script
+
+## Usage
+1. Open your terminal and navigate to the project directory:
+   ```bash
+   cd project01-add-local-user
