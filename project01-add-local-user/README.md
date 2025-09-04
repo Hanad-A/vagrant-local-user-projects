@@ -1,4 +1,4 @@
-Project 01 – Add Local User
+# Project 01 – Add Local User
 
 This project contains a Bash script to create a new local user on a Linux system.
 The script includes error handling and requires sudo/root privileges.
