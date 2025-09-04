@@ -46,7 +46,7 @@ USERNAME : jdoe
 COMMENT  : John Doe
 HOST     : myhost.example.com
 
-About
+# About
 
 This script is part of my Linux scripting practice projects to build hands-on skills in user management, automation, and error handling.
 
