@@ -3,7 +3,7 @@
 This project contains a Bash script to create a new local user on a Linux system.
 The script includes error handling and requires sudo/root privileges.
 
-Features
+# Features
 
 Creates a local user with a username and full name
 
@@ -15,17 +15,15 @@ Displays account details after creation
 
 Exits with error messages if any step fails
 
-Requirements
+# Requirements
 
 Linux system with Bash
 
 Sudo or root privileges
 
 Usage
-# Clone the repository (download the project from GitHub)
+# Clone the repository
 git clone https://github.com/<your-user>/vagrant-local-user-projects.git
-
-# Go into the project folder
 cd vagrant-local-user-projects/project01-add-local-user
 
 # Make the script executable
@@ -39,7 +37,7 @@ You will be prompted for:
 
 Username
 
-Full name (comment)
+Full name
 
 Password
 
@@ -51,6 +49,3 @@ HOST     : myhost.example.com
 About
 
 This script is part of my Linux scripting practice projects to build hands-on skills in user management, automation, and error handling.
-
-👉 Replace <your-user> in the git clone line with your actual GitHub username.
-
